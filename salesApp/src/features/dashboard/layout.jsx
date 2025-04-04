@@ -19,6 +19,8 @@ export const Layout = () => {
                     <li>
                         <Link className='font-semibold text-xl tracking-tight text-white-600' to="/home/products">Productos</Link>
                     </li>
+                    <li className='m-6'><Link className='font-semibold text-xl tracking-tight' to="/home/api">API</Link></li>
+
                 </ul>
             </nav>
             <div className="contenedor">

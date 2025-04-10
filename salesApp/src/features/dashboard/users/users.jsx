@@ -20,8 +20,8 @@ export const Users = () => {
 
 
 
-  const handleViewsDetail = (id) =>{
-    navegate('/home/views-users/'+id)
+  const handleViewsDetail = (id) => {
+    navegate('/home/views-users/' + id)
   }
 
   return (
@@ -47,7 +47,7 @@ export const Users = () => {
                   <td>{element.species}</td>
                   <td>{element.gender}</td>
                   <td>{element.status}</td>
-                  <td><button onClick={()=>handleViewsDetail(element.id)} className='btn btn-primary btn-sm'>Ver</button></td>
+                  <td><button onClick={() => handleViewsDetail(element.id)} className='btn btn-primary btn-sm'>Ver</button></td>
                 </tr>
               ))}
             </tbody>

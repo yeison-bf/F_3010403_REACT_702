@@ -9,12 +9,13 @@ import { Error_404 } from '../../../features/404/error_404'
 import { ViewsUsers } from '../../../features/dashboard/users/components/views-users'
 import { ConsumoApi } from '../../../features/dashboard/consumoAPI/comsumoApi'
 import { ViewsDetail } from '../../../features/dashboard/consumoAPI/components/viewsDetail'
+import { CreateProdutcs } from '../../../features/dashboard/products/components/createProdutcs'
 
 export const Routers = () => {
     return (
         <Routes>
             <Route path='/' element={<Landing />} />
-            <Route path='/products' element={ <h2>Hola Productos</h2>} />
+            <Route path='/products' element={ <h2>Hola Productos Componentes</h2>} />
             <Route path='/services' element={ <h2>Hola Servicios</h2>} />
             <Route path='/login' element={<Login />} />
 
@@ -23,6 +24,7 @@ export const Routers = () => {
                 <Route path='users' element={<Users />} />
                 <Route path='views-users/:id' element={<ViewsUsers />} />
                 <Route path='products' element={<Products />} />
+                <Route path='formProducts' element={<CreateProdutcs />} />
                 <Route path='api' element={<ConsumoApi />} />
                 <Route path='viewsDetail/:id' element={<ViewsDetail />} />
 
